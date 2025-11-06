@@ -1,5 +1,5 @@
 {
-  "originHash" : "cabed46db94c3f4239944b3a56249d77bf5dd236059c7a44e844b6397a702694",
+  "originHash" : "d151d43371b1fca1a383369b4210eb38d484667523d4fcb701ad37164243a34c",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -116,15 +116,6 @@
       "state" : {
         "revision" : "b7e1104502eca3a213b46303391ca4d3bc8ddec1",
         "version" : "2.30910.0"
-      }
-    },
-    {
-      "identity" : "productmodule",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sanazbahmankhahios/ProductModule.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "81f4c08bf6b6b8343c4c8ea1bc9b6b64877bbc92"
       }
     },
     {

@@ -45,11 +45,11 @@ struct ContentView: View {
                 }
             }
             .animation(.easeInOut, value: remoteConfig.appMode)
-            .toolbar {
-                Button("Refresh RC") {
-                    remoteConfig.fetchConfig() // now works immediately
-                }
-            }
+           // .toolbar {
+              //  Button("Refresh RC") {
+                  //  remoteConfig.fetchConfig() // now works immediately
+                //}
+            //}
         }
     }
 }
