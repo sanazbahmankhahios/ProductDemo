@@ -13,24 +13,23 @@ import Combine
 final class RemoteConfigManager: ObservableObject {
     @Published var appMode: String = "product"
     private let remoteConfig = RemoteConfig.remoteConfig()
-
+    
     init() {
         let settings = RemoteConfigSettings()
         settings.minimumFetchInterval = 0 // for debug
         remoteConfig.configSettings = settings
         fetchConfig()
     }
-
+    
     func fetchConfig() {
-        // Wrap in Task to run on main actor
         Task { @MainActor in
             do {
                 let _ = try await remoteConfig.fetchAndActivate()
                 let mode = remoteConfig["app_mode"].stringValue
                 self.appMode = mode
-                print("✅ RemoteConfig appMode =", mode)
+                print("RemoteConfig appMode =", mode)
             } catch {
-                print("❌ RemoteConfig fetch error:", error)
+                print("RemoteConfig fetch error:", error)
             }
         }
     }

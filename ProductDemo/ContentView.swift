@@ -30,6 +30,7 @@ struct ContentView: View {
 
 import SwiftUI
 import FormModule
+import ProductListModule
 
 struct ContentView: View {
     @StateObject private var remoteConfig = RemoteConfigManager()
@@ -41,15 +42,10 @@ struct ContentView: View {
                 case "form":
                     ValidatedFormView()
                 default:
-                    ProductList()
+                    ProductList(container: AppDIContainer.shared)
                 }
             }
             .animation(.easeInOut, value: remoteConfig.appMode)
-           // .toolbar {
-              //  Button("Refresh RC") {
-                  //  remoteConfig.fetchConfig() // now works immediately
-                //}
-            //}
         }
     }
 }

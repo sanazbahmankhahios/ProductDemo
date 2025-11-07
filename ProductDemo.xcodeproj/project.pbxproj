@@ -10,6 +10,10 @@
 		B71FB5212EBD5DAB00EF3CF7 /* ProductKit in Frameworks */ = {isa = PBXBuildFile; productRef = B71FB5202EBD5DAB00EF3CF7 /* ProductKit */; };
 		B748613F2EBD4F44005AFFC8 /* FormModule in Frameworks */ = {isa = PBXBuildFile; productRef = B748613E2EBD4F44005AFFC8 /* FormModule */; };
 		B75148F92EBB518400516123 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B75148F82EBB518400516123 /* GoogleService-Info.plist */; };
+		B7B7A62B2EBE0B8700F73CEE /* FormModule in Frameworks */ = {isa = PBXBuildFile; productRef = B7B7A62A2EBE0B8700F73CEE /* FormModule */; };
+		B7B7A62E2EBE0BAD00F73CEE /* ProductKit in Frameworks */ = {isa = PBXBuildFile; productRef = B7B7A62D2EBE0BAD00F73CEE /* ProductKit */; };
+		B7B7A6432EBE0CFE00F73CEE /* ProductListModule in Frameworks */ = {isa = PBXBuildFile; productRef = B7B7A6422EBE0CFE00F73CEE /* ProductListModule */; };
+		B7DE9D162EBDE9EE00C0669B /* ProductListModule in Frameworks */ = {isa = PBXBuildFile; productRef = B7DE9D152EBDE9EE00C0669B /* ProductListModule */; };
 		B7E74F652EBBAB1C00FED952 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = B7E74F642EBBAB1C00FED952 /* FirebaseCore */; };
 		B7E74F672EBBAB1C00FED952 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B7E74F662EBBAB1C00FED952 /* FirebaseRemoteConfig */; };
 		B7E74F6A2EBBAB5700FED952 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B7E74F692EBBAB5700FED952 /* Kingfisher */; };
@@ -62,7 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DE9D162EBDE9EE00C0669B /* ProductListModule in Frameworks */,
 				B71FB5212EBD5DAB00EF3CF7 /* ProductKit in Frameworks */,
+				B7B7A62B2EBE0B8700F73CEE /* FormModule in Frameworks */,
+				B7B7A6432EBE0CFE00F73CEE /* ProductListModule in Frameworks */,
+				B7B7A62E2EBE0BAD00F73CEE /* ProductKit in Frameworks */,
 				B7E74F6A2EBBAB5700FED952 /* Kingfisher in Frameworks */,
 				B7E74F652EBBAB1C00FED952 /* FirebaseCore in Frameworks */,
 				B748613F2EBD4F44005AFFC8 /* FormModule in Frameworks */,
@@ -133,6 +141,10 @@
 				B7E74F692EBBAB5700FED952 /* Kingfisher */,
 				B748613E2EBD4F44005AFFC8 /* FormModule */,
 				B71FB5202EBD5DAB00EF3CF7 /* ProductKit */,
+				B7DE9D152EBDE9EE00C0669B /* ProductListModule */,
+				B7B7A62A2EBE0B8700F73CEE /* FormModule */,
+				B7B7A62D2EBE0BAD00F73CEE /* ProductKit */,
+				B7B7A6422EBE0CFE00F73CEE /* ProductListModule */,
 			);
 			productName = ProductDemo;
 			productReference = B751488A2EBA5D8300516123 /* ProductDemo.app */;
@@ -219,8 +231,9 @@
 			packageReferences = (
 				B7E74F632EBBAB1C00FED952 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				B7E74F682EBBAB5700FED952 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				B748613D2EBD4F44005AFFC8 /* XCLocalSwiftPackageReference "../FormModule" */,
-				B71FB51F2EBD5DAB00EF3CF7 /* XCLocalSwiftPackageReference "../ProductKit" */,
+				B7B7A6292EBE0B8700F73CEE /* XCLocalSwiftPackageReference "Libraries/FormModule" */,
+				B7B7A62C2EBE0BAD00F73CEE /* XCLocalSwiftPackageReference "Libraries/ProductKit" */,
+				B7B7A6412EBE0CFE00F73CEE /* XCLocalSwiftPackageReference "Libraries/ProductListModule" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B751488B2EBA5D8300516123 /* Products */;
@@ -588,13 +601,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		B71FB51F2EBD5DAB00EF3CF7 /* XCLocalSwiftPackageReference "../ProductKit" */ = {
+		B7B7A6292EBE0B8700F73CEE /* XCLocalSwiftPackageReference "Libraries/FormModule" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../ProductKit;
+			relativePath = Libraries/FormModule;
 		};
-		B748613D2EBD4F44005AFFC8 /* XCLocalSwiftPackageReference "../FormModule" */ = {
+		B7B7A62C2EBE0BAD00F73CEE /* XCLocalSwiftPackageReference "Libraries/ProductKit" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../FormModule;
+			relativePath = Libraries/ProductKit;
+		};
+		B7B7A6412EBE0CFE00F73CEE /* XCLocalSwiftPackageReference "Libraries/ProductListModule" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Libraries/ProductListModule;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -625,6 +642,22 @@
 		B748613E2EBD4F44005AFFC8 /* FormModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FormModule;
+		};
+		B7B7A62A2EBE0B8700F73CEE /* FormModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FormModule;
+		};
+		B7B7A62D2EBE0BAD00F73CEE /* ProductKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductKit;
+		};
+		B7B7A6422EBE0CFE00F73CEE /* ProductListModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductListModule;
+		};
+		B7DE9D152EBDE9EE00C0669B /* ProductListModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProductListModule;
 		};
 		B7E74F642EBBAB1C00FED952 /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;
